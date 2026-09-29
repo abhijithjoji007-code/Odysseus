@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.env
+*.pyc
+app/data/*.db
+app/data/missions.json
+app/data/projects.json
+app/data/tool_audit.jsonl

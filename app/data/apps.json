@@ -1,0 +1,85 @@
+{
+  "notepad": {
+    "aliases": [
+      "text editor"
+    ],
+    "commands": [
+      "notepad.exe"
+    ]
+  },
+  "calculator": {
+    "aliases": [
+      "calc"
+    ],
+    "commands": [
+      "calc.exe"
+    ]
+  },
+  "paint": {
+    "aliases": [
+      "mspaint"
+    ],
+    "commands": [
+      "mspaint.exe"
+    ]
+  },
+  "file explorer": {
+    "aliases": [
+      "explorer",
+      "files"
+    ],
+    "commands": [
+      "explorer.exe"
+    ]
+  },
+  "settings": {
+    "aliases": [
+      "windows settings"
+    ],
+    "commands": [
+      "start",
+      "ms-settings:"
+    ]
+  },
+  "terminal": {
+    "aliases": [
+      "command prompt",
+      "cmd"
+    ],
+    "commands": [
+      "cmd.exe"
+    ]
+  },
+  "powershell": {
+    "aliases": [],
+    "commands": [
+      "powershell.exe"
+    ]
+  },
+  "vscode": {
+    "aliases": [
+      "vs code",
+      "visual studio code"
+    ],
+    "commands": [
+      "code"
+    ]
+  },
+  "chrome": {
+    "aliases": [
+      "google chrome"
+    ],
+    "commands": [
+      "chrome",
+      "%PROGRAMFILES%/Google/Chrome/Application/chrome.exe",
+      "%PROGRAMFILES(X86)%/Google/Chrome/Application/chrome.exe",
+      "%LOCALAPPDATA%/Google/Chrome/Application/chrome.exe"
+    ]
+  },
+  "spotify": {
+    "aliases": [],
+    "commands": [
+      "%APPDATA%/Spotify/Spotify.exe"
+    ]
+  }
+}

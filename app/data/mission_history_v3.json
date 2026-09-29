@@ -1,0 +1,146 @@
+[
+  {
+    "id": "b8ce2d00bb04",
+    "session_id": "d10e01bc06ab454f9fac285e8f771ba1",
+    "objective": "Open my biochemistry notes, summarize the latest chapter, and create five revision questions",
+    "workflow": "study_document",
+    "title": "Study Document Mission",
+    "status": "waiting_input",
+    "progress": 33,
+    "steps": [
+      {
+        "id": "step-1",
+        "title": "Find document",
+        "tool": "search_files",
+        "arguments": {
+          "query": "biochemistry notes"
+        },
+        "depends_on": [],
+        "status": "completed",
+        "output": {
+          "message": "Found 8 matching files.",
+          "matches": [
+            {
+              "name": "Unit_1_Microbiology_Detailed_Notes.pdf",
+              "path": "C:\\Users\\DELL\\Downloads\\Unit_1_Microbiology_Detailed_Notes.pdf",
+              "score": 0.5,
+              "modified": "2026-07-28T15:18:29"
+            },
+            {
+              "name": "Recommendation system Notes.md",
+              "path": "C:\\Users\\DELL\\Downloads\\Vault \\Abhiz\\NLP\\Recommendation system Notes.md",
+              "score": 0.483,
+              "modified": "2026-07-02T11:57:46"
+            },
+            {
+              "name": "1. Foundations of AI .pdf",
+              "path": "C:\\Users\\DELL\\Downloads\\\ud83d\ude80 Generative AI Mastermind - May-20260523T073454Z-3-001\\\ud83d\ude80 Generative AI Mastermind - May\\\ud83d\udcdd Session Notes\\1. Foundations of AI .pdf",
+              "score": 0.402,
+              "modified": "2026-05-08T23:28:26"
+            },
+            {
+              "name": "project_registry.py",
+              "path": "C:\\Users\\DELL\\Downloads\\Odysseus_v6_Phase_1D_Windows_Browser_Fix_v2\\Odysseus_AI_Assistant_v6\\app\\services\\project_registry.py",
+              "score": 0.217,
+              "modified": "2026-08-05T14:30:28"
+            },
+            {
+              "name": "project_registry.py",
+              "path": "C:\\Users\\DELL\\Downloads\\Odysseus_v6_Phase_2_Secure_Tool_Registry_v2\\app\\services\\project_registry.py",
+              "score": 0.217,
+              "modified": "2026-08-05T14:30:28"
+            },
+            {
+              "name": "project_registry.py",
+              "path": "C:\\Users\\DELL\\Downloads\\Odysseus_v6_Phase_3_Mission_Engine\\phase3_work\\app\\services\\project_registry.py",
+              "score": 0.217,
+              "modified": "2026-08-05T14:30:28"
+            },
+            {
+              "name": "project_registry.py",
+              "path": "C:\\Users\\DELL\\Downloads\\Odysseus_v6_Phase_3_Stall_Fix_v2\\phase3_work\\app\\services\\project_registry.py",
+              "score": 0.217,
+              "modified": "2026-08-05T14:30:28"
+            },
+            {
+              "name": "project_registry.py",
+              "path": "C:\\Users\\DELL\\Downloads\\Odysseus_v6_Phase_3_Stall_Fix_v2\\phase3_work\\app\\services\\project_registry.py",
+              "score": 0.217,
+              "modified": "2026-08-05T14:30:28"
+            }
+          ]
+        },
+        "error": "",
+        "attempts": 1,
+        "started_at": "2026-08-05T10:22:51.746550+00:00",
+        "completed_at": "2026-08-05T10:22:52.039533+00:00"
+      },
+      {
+        "id": "step-2",
+        "title": "Read selected document",
+        "tool": "read_document",
+        "arguments": {},
+        "depends_on": [
+          "step-1"
+        ],
+        "status": "waiting_input",
+        "output": {},
+        "error": "",
+        "attempts": 0,
+        "started_at": null,
+        "completed_at": null
+      },
+      {
+        "id": "step-3",
+        "title": "Create summary and revision questions",
+        "tool": "generate_study_material",
+        "arguments": {},
+        "depends_on": [
+          "step-2"
+        ],
+        "status": "pending",
+        "output": {},
+        "error": "",
+        "attempts": 0,
+        "started_at": null,
+        "completed_at": null
+      }
+    ],
+    "prompt": "Choose one result:\n1. Unit_1_Microbiology_Detailed_Notes.pdf\n2. Recommendation system Notes.md\n3. 1. Foundations of AI .pdf\n4. project_registry.py\n5. project_registry.py\nReply with a number or Cancel.",
+    "choices": [
+      {
+        "name": "Unit_1_Microbiology_Detailed_Notes.pdf",
+        "path": "C:\\Users\\DELL\\Downloads\\Unit_1_Microbiology_Detailed_Notes.pdf",
+        "score": 0.5,
+        "modified": "2026-07-28T15:18:29"
+      },
+      {
+        "name": "Recommendation system Notes.md",
+        "path": "C:\\Users\\DELL\\Downloads\\Vault \\Abhiz\\NLP\\Recommendation system Notes.md",
+        "score": 0.483,
+        "modified": "2026-07-02T11:57:46"
+      },
+      {
+        "name": "1. Foundations of AI .pdf",
+        "path": "C:\\Users\\DELL\\Downloads\\\ud83d\ude80 Generative AI Mastermind - May-20260523T073454Z-3-001\\\ud83d\ude80 Generative AI Mastermind - May\\\ud83d\udcdd Session Notes\\1. Foundations of AI .pdf",
+        "score": 0.402,
+        "modified": "2026-05-08T23:28:26"
+      },
+      {
+        "name": "project_registry.py",
+        "path": "C:\\Users\\DELL\\Downloads\\Odysseus_v6_Phase_1D_Windows_Browser_Fix_v2\\Odysseus_AI_Assistant_v6\\app\\services\\project_registry.py",
+        "score": 0.217,
+        "modified": "2026-08-05T14:30:28"
+      },
+      {
+        "name": "project_registry.py",
+        "path": "C:\\Users\\DELL\\Downloads\\Odysseus_v6_Phase_2_Secure_Tool_Registry_v2\\app\\services\\project_registry.py",
+        "score": 0.217,
+        "modified": "2026-08-05T14:30:28"
+      }
+    ],
+    "final_report": "",
+    "created_at": "2026-08-05T10:22:51.746550+00:00",
+    "updated_at": "2026-08-05T10:22:52.040533+00:00"
+  }
+]

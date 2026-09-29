@@ -1,0 +1,6 @@
+{
+  "my app": {
+    "aliases": ["project tool"],
+    "commands": ["C:/Path/To/MyApp.exe"]
+  }
+}

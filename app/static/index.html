@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Odysseus — Mission AI</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar panel">
+      <div class="brand"><div class="sigil">O</div><div><h1>ODYSSEUS</h1><p>PROJECT INTELLIGENCE SYSTEM</p></div></div>
+      <nav>
+        <button class="nav active">◈ Command Center</button>
+        <button class="nav" id="showMissions">◇ Mission Archive</button>
+        <button class="nav" id="showMemory">◇ Memory Vault</button>
+      </nav>
+      <div class="status-block">
+        <div class="status-line"><span id="aiDot" class="dot"></span><strong id="aiStatus">Connecting…</strong></div>
+        <small id="aiModel">Checking Gemini</small>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar panel">
+        <div><span class="eyebrow">ODYSSEUS CORE / V6</span><h2>Mission Command Center</h2></div>
+        <div class="top-actions"><button id="diagnostics" class="ghost">AI Diagnostics</button><span id="clock"></span></div>
+      </header>
+
+      <section class="hero panel">
+        <div>
+          <span class="eyebrow">GOAL → PLAN → AGENTS → RESULT</span>
+          <h3>Give Odysseus a mission,<br/>not just a question.</h3>
+          <p>Mission Mode converts broad goals into visible steps powered by specialized agents.</p>
+        </div>
+        <button id="voiceOrb" class="orb" aria-label="Start voice input"><span></span></button>
+      </section>
+
+      <section class="grid">
+        <article class="panel chat-panel">
+          <div class="section-head"><div><span class="eyebrow">CONVERSATION</span><h3>Command Stream</h3></div><span id="voiceState">Ready</span></div>
+          <div id="chat" class="chat" aria-live="polite">
+            <div class="message assistant"><b>ODYSSEUS</b><p>Online. Try “Teach me PCR”, “Research CRISPR delivery”, “I have an internship interview”, or “I am going to work on my AI project.”</p></div>
+          </div>
+          <form id="commandForm" class="composer">
+            <input id="commandInput" autocomplete="off" placeholder="Enter a command or mission…" />
+            <button type="submit">Execute</button>
+          </form>
+        </article>
+
+        <aside class="right-stack">
+          <article class="panel mission-panel">
+            <div class="section-head"><div><span class="eyebrow">LIVE WORKFLOW</span><h3>Mission Control</h3></div><span id="missionProgress">0%</span></div>
+            <div class="progress"><div id="progressBar"></div></div>
+            <div id="missionEmpty" class="empty">No active mission. Start one from Quick Missions.</div>
+            <div id="missionView" class="hidden">
+              <h4 id="missionTitle"></h4><p id="missionObjective"></p><div id="missionSteps"></div>
+            </div>
+          </article>
+
+          <article class="panel metrics-panel">
+            <div class="section-head"><div><span class="eyebrow">LOCAL SYSTEM</span><h3>Telemetry</h3></div></div>
+            <div class="metric"><span>CPU</span><div><i id="cpuBar"></i></div><b id="cpu">--</b></div>
+            <div class="metric"><span>RAM</span><div><i id="ramBar"></i></div><b id="ram">--</b></div>
+            <div class="metric"><span>DISK</span><div><i id="diskBar"></i></div><b id="disk">--</b></div>
+            <div class="metric"><span>BATTERY</span><div><i id="batteryBar"></i></div><b id="battery">--</b></div>
+          </article>
+        </aside>
+      </section>
+
+      <section class="quick panel">
+        <div class="section-head"><div><span class="eyebrow">ONE-CLICK DEMOS</span><h3>Quick Missions</h3></div></div>
+        <div class="quick-grid">
+          <button data-command="Analyze my project and give me a portfolio readiness report">Project Intelligence Scan</button>
+          <button data-command="Teach me PCR from the basics, then quiz me">Adaptive PCR Learning</button>
+          <button data-command="Research CRISPR delivery methods for a second-year biotechnology student">Biotech Research Brief</button>
+          <button data-command="I have an AI internship interview and need a preparation plan">Career Preparation</button>
+          <button data-command="I am going to work on my AI project">Developer Workspace</button>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
